@@ -2,7 +2,7 @@
 from magic_calculation_102 import add, sub
 
 def magic_calculation(a, b):
-    if (a < b):
+    if a < b:
         c = add(a, b)
 
         for i in range(4, 6):
@@ -10,4 +10,4 @@ def magic_calculation(a, b):
 
         return c
     else:
-        return sun(a, b)
+        return sub(a, b)
