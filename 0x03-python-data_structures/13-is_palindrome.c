@@ -1,6 +1,26 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
+
+/**
+ * listint_len - Counts the number of elements in a linked list
+ * @h: The linked list to count
+ * Return: Number of elements in the linked list
+*/
+
+size_t listint_len(const listint_t *h)
+{
+        int length = 0;
+
+        while (h != NULL)
+        {
+                ++length;
+                h = h->next;
+        }
+
+        return (length);
+}
 
 /**
  * is_palindrome - Checks if a singly linked list is a palindrome
@@ -66,23 +86,4 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	}
 
 	return (NULL);
-}
-
-/**
- * listint_len - Counts the number of elements in a linked list
- * @h: The linked list to count
- * Return: Number of elements in the linked list
-*/
-
-size_t listint_len(const listint_t *h)
-{
-	int length = 0;
-
-	while (h != NULL)
-	{
-		++length;
-		h = h->next;
-	}
-
-	return (length);
 }
