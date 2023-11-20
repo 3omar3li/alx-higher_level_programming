@@ -10,4 +10,4 @@ def safe_print_integer_err(value):
         return False
     except TypeError as te:
         print("Exception:", te, file=sys.stderr)
-    return False
+        return False
