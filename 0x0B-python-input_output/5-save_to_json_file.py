@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 '''Defining save_to_json_file function'''
 
 
